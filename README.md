@@ -11,7 +11,7 @@
 
 ## What is FeedTube?
 
-✨ FeedTube is a lightweight userscript that turns YouTube channel RSS into a fast, full‑page feed. It aggregates your subscriptions, caches offline, auto‑switches fetch sources, filters Shorts, and lets you save to local playlists — with one‑click channel adding and NewPipe‑compatible import/export.
+📺 FeedTube is a lightweight userscript that turns YouTube channel RSS into a fast, full‑page feed. It aggregates your subscriptions, caches offline, auto‑switches fetch sources, filters Shorts, and lets you save to local playlists — with one‑click channel adding and NewPipe‑compatible import/export.
 
 ## Highlights
 - Full‑page grid from channel RSS with per‑channel cache
@@ -24,49 +24,66 @@
 ## Installation
 1. Install the extension [Tampermonkey](https://www.tampermonkey.net)
 2. Install the Script
-3. Create empty FeedTube.html file or download it
+3. Create empty FeedTube.html file or [download](https://raw.githubusercontent.com/testertv/FeedTube/refs/heads/main/files/FeedTube.html) it (Right mouse click -> Save Link As)
 4. Drag&Drop FeedTube.html in your browser
 
 
 ## Fetch Sources
+Below is a summary for each Source mode in your script and its limitations. All modes fetch the same YouTube RSS (feeds/videos.xml); they differ only in “how/through whom” the request is made.
 
 > All modes use the same YouTube RSS; only the transport differs.
 
 <details>
 <summary><b>Auto (direct → mirror → proxies)</b></summary>
 
-- Tries: Direct (2x) → r.jina.ai → isomorphic‑git → allorigins  
-- Pros: Most resilient  
-- Limitations: Can wait ~20s × 2 per channel if Direct stalls; total time dominated by slowest
+- How it works: Tries in order: Direct (2 attempts) → r.jina.ai → cors.isomorphic-git.org → allorigins.
+- Pros: Most resilient; something usually works.
+- Limitations: If Direct is unavailable, you may wait a long time (up to ~20s × 2 per channel due to GM_xhr timeout). Total load time can be stretched by the slowest channel.
 </details>
 
 <details>
 <summary><b>Direct (GM_xhr → youtube.com)</b></summary>
 
-- 20s timeout; anonymous (no cookies)  
-- Pros: Fast, private, fresh  
-- Limitations: Needs file:// access or localhost; may be blocked by filters; 429 with many channels; may need `@connect youtube.com`
+- How it works: GM_xmlhttpRequest directly to youtube.com (CORS is not an issue). Timeout 20s, anonymous: true (no cookies).
+- Pros: Fast, no middlemen; better privacy (requests go only to YouTube); less chance of stale responses.
+- Limitations:
+  - On file:// you must enable your userscript manager’s “Allow access to file URLs” (otherwise it won’t run). Alternative: serve FeedTube.html via http://localhost.
+  - Can be blocked by AdBlock/DNS/Firewall rules (youtube.com, i.ytimg.com).
+  - With many subscriptions you may hit 429 or rate limits from YouTube.
+  - In some setups (e.g., Greasemonkey/Firefox) you may need explicit @connect youtube.com (you already have @connect *).
 </details>
 
 <details>
 <summary><b>Mirror (r.jina.ai)</b></summary>
 
-- Bypasses CORS; good fallback  
-- Limitations: Third‑party; possible stale/cache; 403/429/5xx; privacy trade‑off
+- How it works: Proxied request: https://r.jina.ai/http/<target URL>.
+- Pros: Bypasses CORS easily; often works where Direct is blocked.
+- Limitations:
+  - Public third‑party service: possible limits, 403/429/5xx, regional/network hiccups.
+  - Can serve stale data (caches along the path); you append &_tm=… to bust cache, but it’s not guaranteed.
+  - Privacy: channel feed URLs go to a third party.
 </details>
 
 <details>
 <summary><b>Proxy 1 (isomorphic‑git)</b></summary>
 
-- Simple CORS fallback  
-- Limitations: Unpredictable; rate‑limits/Cloudflare; quotas
+- How it works: https://cors.isomorphic-git.org/https://www.youtube.com/feeds/videos.xml?...&_tm=...
+- Pros: Another CORS proxy fallback.
+- Limitations:
+  - Frequently hits rate limits/Cloudflare → 403/502.
+  - Unpredictable stability; public service.
+  - Potential limits on request size/count.
 </details>
 
 <details>
 <summary><b>Proxy 2 (AllOrigins, raw)</b></summary>
 
-- Handy raw proxy  
-- Limitations: Aggressive caching; quotas; third‑party privacy
+- How it works: https://api.allorigins.win/raw?url=<encoded URL>&_tm=...
+- Pros: Simple raw CORS proxy; convenient fallback.
+- Limitations:
+  - Aggressive caching on the service side (you add _tm, but cache may still appear).
+  - Stability/quotas/5xx typical of public proxies.
+  - Privacy: again, third‑party service.
 </details>
 
 ### General constraints
