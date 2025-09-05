@@ -108,3 +108,8 @@ The FeedTube project aims to ensure privacy, anonymity, and speed when using You
 
 ## 🐂 License
 FeedTube is Free Software Script: You can use, study, share, and improve it at will. Specifically you can redistribute and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+## 💳 Please support my projects! 🤗 Thx.!!!
+<p align="center">
+<a href="" alt=""><img src="https://img.shields.io/badge/Ethereum-Wallet%20➡️-blue"></a>  0x23A82beB500b8781c55E6F17b7e327d85F7f4108 <a href="" alt=""><img src="https://img.shields.io/badge/-⬅️%20Wallet-blue"></a>
+</p><p align="center">
