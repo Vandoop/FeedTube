@@ -14,6 +14,7 @@
 📺 FeedTube is a lightweight userscript that turns YouTube channel RSS into a fast, full‑page feed. It aggregates your subscriptions, caches offline, auto‑switches fetch sources, filters Shorts, and lets you save to local playlists — with one‑click channel adding and NewPipe‑compatible import/export.
 
 ## Highlights
+- No registration or login data needed
 - Full‑page grid from channel RSS with per‑channel cache
 - Resilient fetching (Direct → Mirror → Proxies) with source switch
 - Subscriptions manager + “Add to FeedTube” button on YouTube
