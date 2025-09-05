@@ -9,11 +9,15 @@
 <a href="" alt=""><img src="https://img.shields.io/badge/Version-2025.03.06-blue"></a>
 </p><p align="center">
 
-## What is FeedTube?
+## 📺 What is FeedTube?
 
-📺 FeedTube is a lightweight userscript that turns YouTube channel RSS into a fast, full‑page feed. It aggregates your subscriptions, caches offline, auto‑switches fetch sources, filters Shorts, and lets you save to local playlists — with one‑click channel adding and NewPipe‑compatible import/export.
+FeedTube is a lightweight userscript that turns YouTube channel RSS into a fast, full‑page feed. It aggregates your subscriptions, caches offline, auto‑switches fetch sources, filters Shorts, and lets you save to local playlists — with one‑click channel adding and NewPipe‑compatible import/export.
 
-## Highlights
+YouTube has a very busy interface that takes a long time to load and freezes. To watch videos on FeedTube, embed links are used by default because they allow you to load and watch videos faster.
+
+It is not very easy to recreate YouTube's full functionality in script, so some features may not work correctly or, as in the case of video search, may be missing altogether and redirect you to the original site.
+
+## ✨ Highlights
 - No registration or login data needed
 - Full‑page grid from channel RSS with per‑channel cache
 - Resilient fetching (Direct → Mirror → Proxies) with source switch
@@ -22,14 +26,14 @@
 - Local playlists + NewPipe import/export
 - Quick playback: new tab, popup, or floating panel
 
-## Installation
+## ⚙️ Installation
 1. Install the extension [Tampermonkey](https://www.tampermonkey.net)
 2. Install the Script
 3. Create empty FeedTube.html file or [download](https://raw.githubusercontent.com/testertv/FeedTube/refs/heads/main/files/FeedTube.html) it (Right mouse click -> Save Link As)
 4. Drag&Drop FeedTube.html in your browser
 
 
-## Fetch Sources
+## 🔗 Fetch Sources
 Below is a summary for each Source mode in your script and its limitations. All modes fetch the same YouTube RSS (feeds/videos.xml); they differ only in “how/through whom” the request is made.
 
 > All modes use the same YouTube RSS; only the transport differs.
@@ -98,3 +102,9 @@ Below is a summary for each Source mode in your script and its limitations. All 
 - Use Auto; switch to Direct if slow
 - Use Mirror if Direct is blocked
 - Allowlist domains and reduce concurrency for large lists
+
+## 🛡️ Privacy Policy
+The FeedTube project aims to ensure privacy, anonymity, and speed when using YouTube. Therefore, the application does not collect any data without your consent. Despite this, the script has the ability to download video information through third-party servers that may collect your data.
+
+## 🐂 License
+FeedTube is Free Software Script: You can use, study, share, and improve it at will. Specifically you can redistribute and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
