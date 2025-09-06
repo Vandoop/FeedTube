@@ -26,14 +26,14 @@ It is not very easy to recreate YouTube's full functionality in script, so some 
 - Local playlists + NewPipe import/export
 - Quick playback: new tab, popup, or floating panel
 
-## Screenshots
+## 🖼️ Screenshots
 <p align="center"><a href=""><img src="https://raw.githubusercontent.com/testertv/FeedTube/refs/heads/main/images/screenshot1.png?raw=true"></a></p>
 
 <p align="center"><a href=""><img src="https://raw.githubusercontent.com/testertv/FeedTube/refs/heads/main/images/screenshot2.png?raw=true"></a></p>
 
 ## ⚙️ Installation
 1. Install the extension [Tampermonkey](https://www.tampermonkey.net)
-2. Install the Script
+2. Install the [Script](https://github.com/testertv/FeedTube/releases/download/v0.1_(Beta)/FeedTube.Beta.-0.1.user.js)
 3. Create empty FeedTube.html file or [download](https://raw.githubusercontent.com/testertv/FeedTube/refs/heads/main/files/FeedTube.html) it (Right mouse click -> Save Link As)
 4. Drag&Drop FeedTube.html in your browser
 
