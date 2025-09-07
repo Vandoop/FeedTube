@@ -33,7 +33,7 @@ It is not very easy to recreate YouTube's full functionality in script, so some 
 
 ## ⚙️ Installation
 1. Install the extension [Tampermonkey](https://www.tampermonkey.net)
-2. Install the [Script](https://github.com/testertv/FeedTube/releases/download/v0.1_(Beta)/FeedTube.Beta.-0.1.user.js) or Greasyfork [Script](https://update.greasyfork.org/scripts/548703/FeedTube%20%28Beta%29.user.js)
+2. Install the [Script](https://github.com/testertv/FeedTube/releases/download/v0.1_(Beta_Greasyfork_namespace)/FeedTube-0.1_Greasyfork_namespace.user.js) or Greasyfork [Script](https://update.greasyfork.org/scripts/548703/FeedTube.user.js)
 3. Create empty FeedTube.html file or [download](https://raw.githubusercontent.com/testertv/FeedTube/refs/heads/main/files/FeedTube.html) it (Right mouse click -> Save Link As)
 4. Drag&Drop FeedTube.html in your browser
 
