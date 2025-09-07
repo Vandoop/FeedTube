@@ -23,7 +23,7 @@ It is not very easy to recreate YouTube's full functionality in script, so some 
 - Resilient fetching (Direct → Mirror → Proxies) with source switch
 - Subscriptions manager + “Add to FeedTube” button on YouTube
 - Shorts toggle/sort
-- Local playlists + NewPipe import/export
+- Local playlists + NewPipe Subscriptions import/export supported
 - Quick playback: new tab, popup, or floating panel
 
 ## 🖼️ Screenshots
