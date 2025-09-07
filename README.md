@@ -6,7 +6,7 @@
 <a href="" alt=""><img src="https://img.shields.io/badge/Platform-Browser-brightgreen.svg"></a>
 <a href="" alt=""><img src="https://img.shields.io/badge/SW--Kind-HTML Page-brightgreen.svg"></a>
 <a href="" alt=""><img src="https://img.shields.io/badge/Language-HTML+JS-brightgreen"></a> 
-<a href="" alt=""><img src="https://img.shields.io/badge/Version-2025.XX.XX-blue"></a>
+<a href="" alt=""><img src="https://img.shields.io/badge/Version-0.1(Beta)-blue"></a>
 </p><p align="center">
 
 ## 📺 What is FeedTube?
